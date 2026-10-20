@@ -15,7 +15,9 @@
   with_items:
     - light-locker # For locking the screen
     - xprintidle # For detecting idle time of a user
-  # Assume lightdm, nodejs and npm are already installed by 42.app
+    - nodejs # For building codam-web-greeter
+    - npm # For building codam-web-greeter
+  # Assume lightdm is already installed by 42.app
 
 - name: Install ddcci-dkms #  For backlight control on external monitors
   tags: [codam.webgreeter, codam.webgreeter.init]
